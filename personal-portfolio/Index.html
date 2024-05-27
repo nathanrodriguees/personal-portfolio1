@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nathan Rodrigues</title>
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/modal.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/ba624803ad.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div id="menu-principal">
+      <ul>
+        <li><a href="#sobre"><strong> Sobre </strong></a></li>
+        <li><strong> Formação Acadêmica </strong></li>
+        <li><a href="#" id="curriculo-link"><strong> Currículo </strong></a></li>
+        <!-- Adiciona o link para abrir a modal -->
+        <li><a href="#contato"><strong>Contato </strong></a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <nav id="informacoes">
+      <div>
+        <div>
+          <h2>Olá, Mundo !</h2>
+          <h2>Eu sou Nathan Rodrigues</h2>
+        </div>
+
+        <div>
+          <p>
+            Tenho 23 anos, sou natural de São Paulo capital. Me formei em
+            Mecânica de Usinagem e Eletricista de Manutenção -
+            "Eletroeletrônica", pelo SENAI. Atualmente estou cursando
+            Desenvolvimento de Sistemas pela Escola Senai Suíço-Brasileira
+            Paulo Ernesto Tolle.
+          </p>
+        </div>
+      </div>
+
+      <div id="Foto">
+        <img src="images/Nathan.jpeg" alt="200" width="200">
+      </div>
+    </nav>
+
+    <nav id="sobre">
+      <h1 id="menu-sobre">Sobre mim:</h1>
+
+      <div id="sobre2">
+        <div id="esp">
+          <img src="images/Sobre.jpeg" alt="200" width="300">
+        </div>
+
+        <nav id="espaco-sobre">
+          <div>
+            <p>
+              Sou uma pessoa apaixonada por desafios e sempre em busca de aprendizado. Com uma mente curiosa e aberta, estou constantemente explorando novas áreas de conhecimento e aprimorando minhas habilidades. Tenho um forte interesse em tecnologia e programação, o que me motiva a buscar oportunidades para crescer profissionalmente nesse campo dinâmico e inovador.
+            </p>
+            <p>
+              Minha jornada até aqui foi marcada por dedicação e determinação. Ao longo dos anos, passei por diversas experiências educacionais e profissionais que contribuíram para o meu desenvolvimento pessoal e profissional. Sempre encarei os desafios como oportunidades de crescimento, buscando superar obstáculos com perseverança e criatividade.
+            </p>
+            <p>
+              Além do meu lado profissional, valorizo muito o equilíbrio entre trabalho e vida pessoal. Dedico tempo para cultivar meus hobbies, como leitura, esportes e música, que me ajudam a recarregar as energias e manter o bem-estar emocional. Estou sempre aberto a novas conexões e experiências, buscando construir relacionamentos significativos e contribuir positivamente para o mundo ao meu redor.
+            </p>
+          </div>
+        </nav>
+      </div>
+    </nav>
+
+    <nav id="habilidades">
+      <h1 id="menu-habilidades">Habilidades</h1>
+
+      <table id="habilidades2">
+
+        <tr class="icones">
+          <!-- colunas -->
+          <td>
+            <i class="fa fa-html5" aria-hidden="true"></i>
+            <span>HTML</span>
+          </td>
+
+          <!-- linhas 1 -->
+          <td>
+            <i class="fa fa-css3" aria-hidden="true"></i>
+            <span>CSS</span>
+          </td>
+
+          <!-- linhas 2 -->
+          <td>
+            <i class="fab fa-js"></i>
+            <span>JavaScript</span>
+          </td>
+
+          <!-- linhas 3 -->
+        </tr>
+
+
+
+        <tr class="icones">
+          <!-- colunas -->
+          <td>
+            <i class="fab fa-python"></i>
+            <span>Python</span>
+          </td>
+
+          <!-- linhas 1 -->
+          <td>
+            <i class="fab fa-git-square">
+            </i>
+            <span>GIT</span>
+          </td>
+
+          <!-- linhas 2 -->
+          <td>
+            <i class="fab fa-java"></i>
+            <span>Java</span>
+          </td>
+
+          <!-- linhas 3 -->
+        </tr>
+
+      </table>
+    </nav>
+  </main>
+
+  <footer>
+    <nav id="contato">
+      <h1>
+        Vamos tomar um café ?
+      </h1>
+
+      <div>
+        <ul id="redes-sociais">
+          <li>
+            <a href="https://www.linkedin.com/in/nathan-rodrigues-65b906178/" target="_blank"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/nathan_nr7/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/nathan.rodrigues.90410834" target="_blank"><i
+                class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="https://contate.me/nathan-rodrigues" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </footer>
+
+  <!-- Modal -->
+<div class="modal hidden" id="curriculo-modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <!-- Conteúdo do currículo -->
+    <div class="header">
+      <h2>NATHAN RODRIGUES DO NASCIMENTO</h2>
+      <p class="subheader">Desenvolvedor de Sistemas</p>
+    </div><br>
+
+    <div class="contact">
+      <p class="contact-info"><i class="fas fa-map-marker-alt"></i> Rua Maria Madalena de Jesus, 181, apto 22 – Jandira <span class="right-align">23 anos</span></p>
+      <p class="contact-info"><i class="fas fa-map-pin"></i> CEP: 06622-080 – São Paulo - SP <span class="right-align">Brasileiro</span></p>
+      <p class="contact-info"><i class="fas fa-phone"></i> Tel.: (11) 98369-1518 / (11) 96030-5286 <span class="right-align">Solteiro</span></p>
+      <p class="contact-info"><i class="fas fa-envelope"></i> E-mail: <a href="mailto:nathan_rodrigues07@outlook.com">nathan_rodrigues07@outlook.com</a> <span class="right-align">Sem filhos</span></p>
+      <p class="contact-info"><i class="fab fa-linkedin"></i> Linkedin: <a href="https://www.linkedin.com/in/nathan-rodrigues-65b906178/"
+          target="_blank">https://www.linkedin.com/in/nathan-rodrigues-65b906178/</a></p>
+      <p class="contact-info"><i class="fab fa-github"></i> Github: <a href="https://github.com/nathanrodriguees" target="_blank">https://github.com/nathanrodriguees</a>
+      </p><br>
+    </div>
+
+    <div class="section">
+      <h3>FORMAÇÃO ACADÊMICA</h3>
+      <div class="content-block">
+        <p>2023 – 2024 – Escola SENAI “Suiço-Brasileira Paulo Ernesto Tolle” – Técnico em Desenvolvimento de Sistemas
+          (1200 horas).</p>
+        <p>2017 – 2018 – Escola SENAI “Prof. Vicente Amato” – CAI Eletricista de Manutenção Eletroeletrônica (1600 horas).</p>
+        <p>2015 – 2016 - Escola SENAI “Prof. Vicente Amato” – CAI Mecânico de Usinagem (1600 horas).</p>
+        <p>2015 – 2017 – E. E. Prof. Josepha Pinto Chiavelli – Ensino Médio Completo.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>RESUMO DE QUALIFICAÇÕES</h3>
+      <div class="content-block">
+        <ul>
+          <li>Analisar requisitos funcionais e não-funcionais de produtos, desenvolver e testar sistemas de software, de
+            acordo com as especificações do projeto, considerando as boas práticas do mercado de tecnologia da informação
+            e as necessidades do usuário.</li>
+          <li>Conhecimento em linguagem de programação e linguagem de marcação como: Python, Java, JavaScript, HTML e CSS.</li>
+          <li>Conhecimento em Tecnologia da Informação e Comunicação: Sistemas Operacionais, Hardware e Redes de Computadores.</li>
+          <li>Conhecimento em gerenciamento de banco de dados, que utiliza a linguagem SQL como interface.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>CONHECIMENTOS GERAIS</h3>
+      <div class="content-block">
+        <p>Informática: Windows – Domínio do pacote Office (Word, Excel, PowerPoint) e adicionais: o Outlook, OneDrive, Internet Explorer, Google Chrome e Web Firefox.</p>
+      </div>
+    </div>
+    <br>
+
+    <div class="section">
+      <h3>HISTÓRICO PROFISSIONAL</h3>
+      <div class="content-block">
+        <ul>
+          <li>19/02/2024 – Atuando – Analista de Suporte – “Partnervision Tecnologias.”</li>
+          <li>06/07/2023 – 14/02/2024 – Inspetor de Qualidade Jr. – “EFF Dental Componentes.”</li>
+          <li>05/04/2021 – 07/12/2022 – Inspetor de Qualidade – “Valman Industria Metalúrgica Ltda.”</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>CURSOS EXTRACURRICULARES</h3>
+      <div class="content-block">
+        <ul>
+          <li>Competências Transversais (14 horas) - SENAI EAD
+            <ul>
+              <li>Lógica de Programação e Tecnologia da Informação e Comunicação.</li>
+            </ul>
+          </li>
+          <li>Programação em Phyton (80 horas) - Escola SENAI “Suiço-Brasileira Paulo Ernesto Tolle”.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="script/modal.js"></script> <!-- Adiciona o JavaScript para a modal -->
+
+</body>
+
+</html>
